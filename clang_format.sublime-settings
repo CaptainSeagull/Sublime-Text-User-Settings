@@ -1,0 +1,5 @@
+{
+    "binary": "C:/Program Files/LLVM/bin/clang-format.exe",
+    "style": "File",
+    "format_on_save": true
+}

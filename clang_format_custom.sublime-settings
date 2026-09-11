@@ -1,0 +1,70 @@
+{
+    "BasedOnStyle": "LLVM",
+    "Language": "Cpp",
+    "Standard": "c++17",
+
+    "ColumnLimit": 120,
+    "IndentWidth": 4,
+    "TabWidth": 4,
+    "UseTab": "Never",
+    "ContinuationIndentWidth": 4,
+    "MaxEmptyLinesToKeep": 1,
+    "KeepEmptyLinesAtTheStartOfBlocks": false,
+
+    // Keep #define indented inside #if.
+    "IndentPPDirectives": "BeforeHash",
+
+    // Return type on its own line for file-scope definitions; never merge
+    // a function body onto one line.
+    "BreakAfterReturnType": "TopLevelDefinitions",
+    "AllowShortFunctionsOnASingleLine": "None",
+
+    "BreakBeforeBraces": "Attach",
+    "PointerAlignment": "Right",
+    "ReferenceAlignment": "Pointer",
+    "DerivePointerAlignment": false,
+
+    // No space in "if(", "for(", "while(", "func(".
+    "SpaceBeforeParens": "Custom",
+    "SpaceBeforeParensOptions": {
+        "AfterControlStatements": false,
+        "AfterFunctionDefinitionName": false,
+        "AfterFunctionDeclarationName": false,
+        "AfterIfMacros": false,
+        "AfterOverloadedOperator": false,
+        "BeforeNonEmptyParentheses": false
+    },
+    "SpaceAfterCStyleCast": false,
+    "SpacesBeforeTrailingComments": 1,
+
+    // Keep "if(x) { one_stmt(); }" and "case X: { ... } break;" one-line.
+    "IndentCaseLabels": true,
+    "AllowShortBlocksOnASingleLine": "Always",
+    "AllowShortCaseLabelsOnASingleLine": true,
+    "AllowShortIfStatementsOnASingleLine": "AllIfsAndElse",
+    "AllowShortLoopsOnASingleLine": true,
+
+    // Wrapped args align under the "("; resist breaking right after it.
+    "AlignAfterOpenBracket": "Align",
+    "BinPackArguments": true,
+    "BinPackParameters": true,
+    "AllowAllParametersOfDeclarationOnNextLine": true,
+    "PenaltyBreakBeforeFirstCallParameter": 200,
+    "PenaltyBreakOpenParenthesis": 200,
+
+    // Off on purpose: turning these on re-aligns code you left unaligned
+    // and produces more churn than it removes.
+    "AlignConsecutiveAssignments": false,
+    "AlignConsecutiveDeclarations": false,
+    "AlignTrailingComments": { "Kind": "Never" },
+    "AlignOperands": true,
+    "AlignEscapedNewlines": "Left",
+
+    "NamespaceIndentation": "None",
+    "Cpp11BracedListStyle": false,
+    "ReflowComments": false,
+    "SortIncludes": false,
+    "FixNamespaceComments": false,
+
+    "ForEachMacros": ["NODE_FOREACH"]
+}

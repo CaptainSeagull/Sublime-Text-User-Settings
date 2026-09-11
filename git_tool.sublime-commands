@@ -1,0 +1,25 @@
+[
+    // Command Palette entries for the window commands in git_tool.py.
+    // Sublime names commands after the CLASS, not the file, so these stay
+    // valid regardless of what the plugin file is called:
+    //   GitDifftoolDirCommand -> git_difftool_dir  (optional "rev")
+    //   GitRunCommand         -> git_run           ("args" or "commands")
+
+    {
+        "caption": "Git: Diff working tree vs HEAD",
+        "command": "git_difftool_dir"
+    },
+    {
+        // Three dots = diff against the merge base, i.e. what this branch
+        // changed since it diverged from main, ignoring main's own commits.
+        "caption": "Git: Diff this branch vs main",
+        "command": "git_difftool_dir",
+        "args": { "rev": "main..." }
+    },
+
+    {
+        "caption": "Git: Fetch and pull",
+        "command": "git_run",
+        "args": { "commands": [["fetch", "--all", "--prune"], ["pull", "--ff-only"]] }
+    },
+]

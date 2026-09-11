@@ -1,0 +1,74 @@
+[
+    // Set mark
+    { "keys": ["ctrl+space", "ctrl+space"], "command": "set_mark" },
+    { "keys": ["ctrl+space", "ctrl+s"], "command": "select_to_mark" },
+    { "keys": ["ctrl+space", "ctrl+d"], "command": "delete_to_mark" },
+
+    // Move up / down by paragraph
+    { "keys": ["ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
+    { "keys": ["ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
+
+    // Move to left/right window
+    { "keys": ["ctrl+9"], "command": "focus_group", "args": { "group": 0 } },
+    { "keys": ["ctrl+0"], "command": "focus_group", "args": { "group": 1 } },
+    
+    // Move left/right on open tabs
+    { "keys": ["ctrl+shift+n"], "command": "prev_view" },
+    { "keys": ["ctrl+shift+m"], "command": "next_view" },
+
+    // Set to two column layout
+    { "keys": ["alt+shift+2"], "command": "set_layout", "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]] } },
+
+    // Join the previous line to the next    
+    { "keys": ["ctrl+j"], "command": "join_lines" },
+    
+    // Duplicate line
+    { "keys": ["ctrl+shift+j"], "command": "duplicate_line" },
+
+    // Delete line
+    { "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+    // Next / previous error
+    { "keys": ["ctrl+w"], "command": "next_result" },
+    { "keys": ["ctrl+e"], "command": "prev_result" },
+
+    // Select lines up / below
+    { "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
+
+    // Move current line up/down
+    { "keys": ["alt+up"],   "command": "swap_line_up" },
+    { "keys": ["alt+down"], "command": "swap_line_down" },
+
+    // Open terminal    
+    {"keys": ["ctrl+shift+h"], "command": "terminus_open", "args": {"cwd": "${folder}" } },
+
+    // Find all references in current file or all files
+    { "keys": ["ctrl+="], "command": "show_overlay", "args": { "overlay": "goto", "text": "@" } },
+    { "keys": ["ctrl+shift+="], "command": "goto_symbol_in_project" },
+
+    { "keys": ["ctrl+n"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+    { "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+
+    // Find and skip
+    { "keys": ["ctrl+/"], "command": "find_under_expand" },
+    { "keys": ["ctrl+shift+/"], "command": "find_under_expand_skip" },
+
+    // Goto definition
+    { "keys": ["ctrl+q"], "command": "goto_definition" },
+
+    // Open the build panel
+    {"keys": ["ctrl+;"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true } },
+
+    // Next / previous find match (ctrl+f)
+    { "keys": ["ctrl+6"], "command": "find_next" },
+    { "keys": ["ctrl+7"], "command": "find_prev" },
+
+    // Jump to start / end of highlighted scope
+    { "keys": ["ctrl+["], "command": "bh_key", "args": {"no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "left"} } } },
+    { "keys": ["ctrl+]"], "command": "bh_key", "args": {"no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "right"} } } },
+
+    // Select to the start/end of current bracket
+    { "keys": ["ctrl+shift+["], "command": "bh_key", "args": { "no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "left", "extend": true} } } },
+    { "keys": ["ctrl+shift+]"], "command": "bh_key", "args": {"no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "right", "extend": true} } } }
+]

@@ -1,0 +1,17 @@
+# --- Generated caches: rebuilt by their packages on demand ---
+*.cache
+/Terminus.hidden-color-scheme
+
+# --- Package Control runtime state ---
+# (installed_packages is the restore manifest -- keep that one)
+Package Control.user-ca-bundle
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.merged-ca-bundle
+Package Control.ca-certs/
+
+# --- Editor / tooling local state ---
+.claude/settings.local.json
+*.sublime-workspace

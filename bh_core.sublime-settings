@@ -1,0 +1,23 @@
+{
+    "high_visibility_enabled_by_default": false,
+    "match_only_adjacent": false,
+    "ignore_threshold": true,
+    "block_cursor_mode": true,
+    "high_visibility_style": "underline",
+
+    // Styles: solid | outline | underline | thin_underline | squiggly | stippled
+    "bracket_styles": {
+        "default":      { "icon": "dot",      "color": "brackethighlighter.all",       "style": "underline" },
+        "unmatched":    { "icon": "question", "color": "brackethighlighter.unmatched", "style": "outline"   },
+
+        "curly":        { "icon": "curly_bracket"  },
+        "round":        { "icon": "round_bracket"  },
+        "square":       { "icon": "square_bracket" },
+        "angle":        { "icon": "angle_bracket"  },
+        "tag":          { "icon": "tag"            },
+        "c_define":     { "icon": "hash"           },
+        "single_quote": { "icon": "single_quote"   },
+        "double_quote": { "icon": "double_quote"   },
+        "regex":        { "icon": "star"           }
+    }
+}

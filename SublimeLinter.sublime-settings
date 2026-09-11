@@ -1,0 +1,15 @@
+{
+  "linters": {
+    "annotations": {
+      "errors": ["TODO"],
+    }
+  },
+  "styles": [
+    {
+      "types": ["error"],
+      "mark_style": "outline",
+      "scope": "region.redish"
+    } 
+  ]
+}
+

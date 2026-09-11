@@ -1,0 +1,14 @@
+{
+  "theme": "user",
+    "user_theme_colors": {
+        "background": "#222222",
+        "foreground": "#ffffcc",
+        "caret": "#ff0000",
+        "block_caret": "#ff0000"
+    },
+  "view_settings": {
+      "block_caret": true,
+      "caret_style": "solid",
+      "caret_extra_width": 1
+  }
+}

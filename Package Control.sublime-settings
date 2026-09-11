@@ -1,0 +1,18 @@
+{
+    "bootstrapped": true,
+    "in_process_packages":
+    [
+    ],
+    "installed_packages":
+    [
+        "BracketHighlighter",
+        "Case Conversion",
+        "Clang Format",
+        "Git",
+        "Package Control",
+        "SublimeLinter",
+        "SublimeLinter-annotations",
+        "SublimeLinter-clang",
+        "Terminus",
+    ],
+}
