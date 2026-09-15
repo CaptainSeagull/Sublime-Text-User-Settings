@@ -19,7 +19,7 @@
 
         "selection":                 "#777777",
         "selection_border":          "#ffffff",
-        "inactive_selection":        "#444444",
+        //"inactive_selection":        "#000000", // The ctrl+i ends up this colour... for some reason
 
         "find_highlight":            "#000000",
         "find_highlight_foreground": "#ffffff",
@@ -52,7 +52,7 @@
         { "scope": "region.redish",    "foreground": "#ff0000" },
         { "scope": "region.orangish",  "foreground": "#ffaa00" },
         { "scope": "region.yellowish", "foreground": "#ffff00" },
-        { "scope": "region.greenish",  "foreground": "#00cc00" },
+        { "scope": "region.greenish",  "foreground": "#1f5030" },
         { "scope": "region.cyanish",   "foreground": "#00cdcd" },
         { "scope": "region.bluish",    "foreground": "#5c5cff" },
         { "scope": "region.purplish",  "foreground": "#cd00cd" },

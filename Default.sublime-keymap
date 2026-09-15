@@ -16,8 +16,9 @@
     { "keys": ["ctrl+shift+n"], "command": "prev_view" },
     { "keys": ["ctrl+shift+m"], "command": "next_view" },
 
-    // Set to two column layout
-    { "keys": ["alt+shift+2"], "command": "set_layout", "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]] } },
+    // Single pane / two columns
+    { "keys": ["ctrl+shift+1"], "command": "set_layout", "args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]] } },
+    { "keys": ["ctrl+shift+2"], "command": "set_layout", "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]] } },
 
     // Join the previous line to the next    
     { "keys": ["ctrl+j"], "command": "join_lines" },
@@ -43,22 +44,16 @@
     // Open terminal    
     {"keys": ["ctrl+shift+h"], "command": "terminus_open", "args": {"cwd": "${folder}" } },
 
-    // Find all references in current file or all files
-    { "keys": ["ctrl+="], "command": "show_overlay", "args": { "overlay": "goto", "text": "@" } },
-    { "keys": ["ctrl+shift+="], "command": "goto_symbol_in_project" },
-
+    // Goto start / end of line
     { "keys": ["ctrl+n"], "command": "move_to", "args": {"to": "bol", "extend": false} },
     { "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "eol", "extend": false} },
 
     // Find and skip
-    { "keys": ["ctrl+/"], "command": "find_under_expand" },
-    { "keys": ["ctrl+shift+/"], "command": "find_under_expand_skip" },
+    { "keys": ["ctrl+8"], "command": "find_under_expand" },
+    { "keys": ["ctrl+shift+8"], "command": "find_under_expand_skip" },
 
     // Goto definition
     { "keys": ["ctrl+q"], "command": "goto_definition" },
-
-    // Open the build panel
-    {"keys": ["ctrl+;"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true } },
 
     // Next / previous find match (ctrl+f)
     { "keys": ["ctrl+6"], "command": "find_next" },
@@ -70,5 +65,28 @@
 
     // Select to the start/end of current bracket
     { "keys": ["ctrl+shift+["], "command": "bh_key", "args": { "no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "left", "extend": true} } } },
-    { "keys": ["ctrl+shift+]"], "command": "bh_key", "args": {"no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "right", "extend": true} } } }
+    { "keys": ["ctrl+shift+]"], "command": "bh_key", "args": {"no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "right", "extend": true} } } },
+
+    // Toggle comments
+    { "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": false } },
+    { "keys": ["ctrl+shift+/"], "command": "toggle_commnt", "args": { "block": true } },
+
+    // New file / close tab
+    { "keys": ["ctrl+d"], "command": "new_file" },
+    { "keys": ["ctrl+shift+d"], "command": "close" },
+
+    // Goto file / project
+    { "keys": ["ctrl+i"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+    { "keys": ["ctrl+shift+i"], "command": "goto_symbol_in_project" },
+
+    // Open the build panel
+    { "keys": ["ctrl+;"], "command": "build" },
+    { "keys": ["ctrl+shift+;"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true } },
+
+    // LSP (clangd)
+    { "keys": ["ctrl+="], "command": "lsp_hover", "context": [{"key": "lsp.session_with_capability", "operand": "hoverProvider"}] },
+    { "keys": ["Ctrl+shift+="], "command": "lsp_symbol_rename", "context": [{"key": "lsp.session_with_capability", "operand": "renameProvider"}] },
+
+    // Find references for whatever's under cursor
+    { "keys": ["ctrl+u"], "command": "lsp_symbol_references" },
 ]

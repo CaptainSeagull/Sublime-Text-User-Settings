@@ -7,6 +7,7 @@
 	"caret_extra_width": 2,
 	"caret_style": "blink",
     "color_scheme": "Packages/User/Seagull - dark.sublime-color-scheme",
+    //"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"detect_indentation": false,
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_indent_guides": true,
@@ -47,6 +48,7 @@
 	"ignored_packages":
 	[
 		"Git Formats",
+		"SublimeLinter-clang",
 		"Vintage",
 	],
 	"inactive_sheet_dimming": false,
@@ -61,7 +63,7 @@
 	"overlay_scroll_bars": "enabled",
 	"remember_open_files": false,
 	"save_on_focus_lost": true,
-    "match_selection": false,
+    "match_selection": true,
     "mini_diff": false,
     "show_git_status": false,
 	"scroll_speed": 2.0,

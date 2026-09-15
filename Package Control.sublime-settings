@@ -9,6 +9,8 @@
         "Case Conversion",
         "Clang Format",
         "Git",
+        "LSP",
+        "LSP-clangd",
         "Package Control",
         "SublimeLinter",
         "SublimeLinter-annotations",

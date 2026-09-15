@@ -1,0 +1,9 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+    "document_highlight_style": "",
+    "diagnostics_highlight_style": "",
+    "show_multiline_diagnostics_highlights": false,
+    "diagnostics_gutter_marker": "",
+    "show_diagnostics_in_view_status": false,
+    "show_diagnostics_in_hover": false,
+}
