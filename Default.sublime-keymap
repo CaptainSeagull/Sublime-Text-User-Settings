@@ -44,8 +44,10 @@
     // Jump back after goto (4coder ctrl+`)
     { "keys": ["ctrl+`"], "command": "jump_back" },
 
-    // Multi-caret: next match (4coder ctrl+5)
+    // Multi-caret: next match / skip next (4coder ctrl+5)
     { "keys": ["ctrl+5"], "command": "find_under_expand" },
+    { "keys": ["ctrl+shift+5"], "command": "find_under_expand_skip" },
+
 
     // Select surrounding scope (4coder ctrl+-)
     { "keys": ["ctrl+-"], "command": "expand_selection", "args": { "to": "brackets" } },

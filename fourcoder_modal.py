@@ -89,6 +89,8 @@ BINDINGS = {
     ("u", False): ("lsp_symbol_references", {}),
     ("r", False): ("lsp_symbol_rename", {}),
     ("5", False): ("find_under_expand", {}),
+    ("5", True): ("find_under_expand_skip", {}),
+
     ("6", False): ("find_next", {}),
     ("7", False): ("find_prev", {}),
     ("9", False): ("move", {"by": "subword_ends", "forward": False}),
@@ -136,7 +138,7 @@ TEXT_KEYS = (
 
 def default_mode():
     return sublime.load_settings("Preferences.sublime-settings").get(
-        "fourcoder_modal_default_mode", MODE_NAVIGATE
+        "fourcoder_modal_default_mode", MODE_INSERT
     )
 
 
