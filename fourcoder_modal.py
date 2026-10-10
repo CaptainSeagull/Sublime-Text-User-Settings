@@ -95,14 +95,8 @@ BINDINGS = {
     ("-", False): ("expand_selection", {"to": "brackets"}),
     ("/", False): ("toggle_comment", {"block": False}),
     ("/", True): ("toggle_comment", {"block": True}),
-    ("[", False): (
-        "move",
-        {"by": "stops", "empty_line": True, "forward": False},
-    ),
-    ("]", False): (
-        "move",
-        {"by": "stops", "empty_line": True, "forward": True},
-    ),
+    ("[", False): ("move_to_blank_line", {"forward": False}),
+    ("]", False): ("move_to_blank_line", {"forward": True}),
     ("[", True): ("swap_line_up", {}),
     ("]", True): ("swap_line_down", {}),
     ("\\", False): (

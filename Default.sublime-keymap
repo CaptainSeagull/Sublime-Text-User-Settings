@@ -5,11 +5,12 @@
     { "keys": ["ctrl+="], "command": "set_mark", "args": { "swap": true } },
     { "keys": ["ctrl+backspace"], "command": "delete_to_mark" },
 
-    // Move up / down by paragraph
-    { "keys": ["ctrl+up"], "command": "move", "args": { "by": "stops", "empty_line": true, "forward": false } },
-    { "keys": ["ctrl+down"], "command": "move", "args": { "by": "stops", "empty_line": true, "forward": true } },
-    { "keys": ["ctrl+["], "command": "move", "args": { "by": "stops", "empty_line": true, "forward": false } },
-    { "keys": ["ctrl+]"], "command": "move", "args": { "by": "stops", "empty_line": true, "forward": true } },
+    // Move up / down by blank line (whitespace-only counts as blank)
+    { "keys": ["ctrl+up"], "command": "move_to_blank_line", "args": { "forward": false } },
+    { "keys": ["ctrl+down"], "command": "move_to_blank_line", "args": { "forward": true } },
+    { "keys": ["ctrl+["], "command": "move_to_blank_line", "args": { "forward": false } },
+    { "keys": ["ctrl+]"], "command": "move_to_blank_line", "args": { "forward": true } },
+
 
     // Word left / right (4coder ctrl+9 / ctrl+0)
     { "keys": ["ctrl+9"], "command": "move", "args": { "by": "subword_ends", "forward": false } },
