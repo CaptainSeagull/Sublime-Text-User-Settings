@@ -1,54 +1,55 @@
 {
     "variables":
     {
-        "bg":          "#222222",
-        "fg":          "#ffffcc",
-        "grey":        "#aaaaaa",
-        "yellow":      "#ffff00",
-        "caret_green": "#00ff00",
-        "red":         "#ff0000"
+        "bg":          "#1E1F22",
+        "fg":          "#FCFCCC",
+        "comment":     "#93C0F7",
+        "string":      "#A8D69A",
+        "special":     "#F28B82",
+        "caret":       "#FF3B30",
+        "red":         "#FF3B30",
+        "mark":        "#7A808A",
+        "ghost":       "#5A5E66",
+        "note_pop":    "#A8D69A",
+        "todo_pop":    "#FFD54F"
     },
 
     "globals":
     {
         "background":                "var(bg)",
         "foreground":                "var(fg)",
-        "caret":                     "var(caret_green)",
-        "invisibles":                "#ffffff",
-        "line_highlight":            "#444444",
+        "caret":                     "var(caret)",
+        "invisibles":                "var(ghost)",
+        "line_highlight":            "#2A2C31",
 
-        "selection":                 "#777777",
-        "selection_border":          "#ffffff",
-        //"inactive_selection":        "#000000", // The ctrl+i ends up this colour... for some reason
+        "selection":                 "#3D4552",
+        "selection_border":          "#666A72",
 
-        "find_highlight":            "#000000",
-        "find_highlight_foreground": "#ffffff",
+        "find_highlight":            "#3D4552",
+        "find_highlight_foreground": "var(fg)",
 
-        // Outline around other occurrences of the selected text. Dormant while
-        // match_selection is false -- but keep it: delete this line and Sublime
-        // goes back to synthesising the colour, which is what made those boxes
-        // green. One line to keep the behaviour pinned if you re-enable it.
-        "highlight":                 "#ffffff",
+        "highlight":                 "#666A72",
 
         "misspelling":               "var(red)",
-        "accent":                    "var(yellow)",
+        "accent":                    "var(comment)",
 
-        "guide":                     "#444444",
-        "stack_guide":               "#888888",
-        "active_guide":              "#ffffff"
+        "guide":                     "#44474D",
+        "stack_guide":               "#666A72",
+        "active_guide":              "#93C0F7"
     },
 
     "rules":
     [
-        // ---- base theme -------------------------------------------------
-        { "name": "Comment", "scope": "comment", "foreground": "var(yellow)", "font_style": "" },
-        { "name": "String",  "scope": "string",  "foreground": "var(grey)" },
+        // ---- base theme (theme-claude-blue) ---------------------------
+        { "name": "Comment", "scope": "comment", "foreground": "var(comment)", "font_style": "" },
+        { "name": "String",  "scope": "string",  "foreground": "var(string)" },
+        { "name": "Keyword", "scope": "keyword, storage.type, storage.modifier", "foreground": "var(fg)" },
+        { "name": "Constant", "scope": "constant.numeric, constant.language, constant.character, constant.other", "foreground": "var(fg)" },
+        { "name": "Preprocessor", "scope": "meta.preprocessor, keyword.control.import", "foreground": "var(fg)" },
+        { "name": "Include path", "scope": "string.quoted.other.lt-gt.include", "foreground": "var(string)" },
+        { "name": "Special char", "scope": "punctuation.section, punctuation.terminator, punctuation.separator", "foreground": "var(special)" },
 
         // ---- Region colours ---------------------------------------------
-        // Sublime SYNTHESISES any region.*ish not defined here, guessing from
-        // the scheme's palette. This palette is sparse, so the guesses were bad
-        // -- that was the red-braces bug. Do NOT trim these even where a colour
-        // looks unused: removing one brings the guessing back for that hue.
         { "scope": "region.redish",    "foreground": "#ff0000" },
         { "scope": "region.orangish",  "foreground": "#ffaa00" },
         { "scope": "region.yellowish", "foreground": "#ffff00" },
@@ -59,16 +60,10 @@
         { "scope": "region.pinkish",   "foreground": "#ff69b4" },
 
         // ---- BracketHighlighter -----------------------------------------
-        // Paired with bracket_styles in bh_core.sublime-settings, which points
-        // every bracket type at brackethighlighter.all. BH draws "underline"
-        // for matched and "outline" for unmatched; both use foreground only, so
-        // add a "background" here only if you switch a style to "solid".
-        { "name": "Bracket Highlighter - All",       "scope": "brackethighlighter.all",       "foreground": "var(yellow)" },
+        { "name": "Bracket Highlighter - All",       "scope": "brackethighlighter.all",       "foreground": "var(comment)" },
         { "name": "Bracket Highlighter - Unmatched", "scope": "brackethighlighter.unmatched", "foreground": "var(red)" },
 
         // ---- SublimeLinter ----------------------------------------------
-        // region.redish is pinned above and deliberately left out of this rule
-        // -- sharing it was what made BH and SublimeLinter interfere.
         { "name": "Linter Error", "scope": "region.error, sublimelinter.mark.error", "foreground": "var(red)" }
     ]
 }

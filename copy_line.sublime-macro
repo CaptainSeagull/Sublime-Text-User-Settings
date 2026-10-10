@@ -1,0 +1,5 @@
+[
+    { "command": "expand_selection", "args": { "to": "line", "cancel": true } },
+    { "command": "copy" },
+    { "command": "move_to", "args": { "to": "hardbol", "extend": false } }
+]

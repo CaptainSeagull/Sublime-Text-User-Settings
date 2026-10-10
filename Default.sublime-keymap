@@ -1,92 +1,124 @@
 [
-    // Set mark
-    { "keys": ["ctrl+space", "ctrl+space"], "command": "set_mark" },
-    { "keys": ["ctrl+space", "ctrl+s"], "command": "select_to_mark" },
-    { "keys": ["ctrl+space", "ctrl+d"], "command": "delete_to_mark" },
+    // Mark (4coder: ctrl+space / ctrl+= / ctrl+backspace)
+    { "keys": ["ctrl+space"], "command": "set_mark" },
+    { "keys": ["ctrl+="], "command": "set_mark", "args": { "swap": true } },
+    { "keys": ["ctrl+backspace"], "command": "delete_to_mark" },
 
     // Move up / down by paragraph
-    { "keys": ["ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
-    { "keys": ["ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
+    { "keys": ["ctrl+up"], "command": "move", "args": { "by": "stops", "empty_line": true, "forward": false } },
+    { "keys": ["ctrl+down"], "command": "move", "args": { "by": "stops", "empty_line": true, "forward": true } },
+    { "keys": ["ctrl+["], "command": "move", "args": { "by": "stops", "empty_line": true, "forward": false } },
+    { "keys": ["ctrl+]"], "command": "move", "args": { "by": "stops", "empty_line": true, "forward": true } },
 
-    // Move to left/right window
-    { "keys": ["ctrl+9"], "command": "focus_group", "args": { "group": 0 } },
-    { "keys": ["ctrl+0"], "command": "focus_group", "args": { "group": 1 } },
-    
+    // Word left / right (4coder ctrl+9 / ctrl+0)
+    { "keys": ["ctrl+9"], "command": "move", "args": { "by": "subword_ends", "forward": false } },
+    { "keys": ["ctrl+0"], "command": "move", "args": { "by": "subword_ends", "forward": true } },
+
+    // Cycle panels (4coder ctrl+t)
+    { "keys": ["ctrl+t"], "command": "focus_neighboring_group" },
+
     // Move left/right on open tabs
     { "keys": ["ctrl+shift+n"], "command": "prev_view" },
     { "keys": ["ctrl+shift+m"], "command": "next_view" },
 
     // Single pane / two columns
-    { "keys": ["ctrl+shift+1"], "command": "set_layout", "args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]] } },
-    { "keys": ["ctrl+shift+2"], "command": "set_layout", "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]] } },
+    { "keys": ["ctrl+shift+1"], "command": "set_layout", "args": { "cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]] } },
+    { "keys": ["ctrl+shift+2"], "command": "set_layout", "args": { "cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]] } },
 
-    // Join the previous line to the next    
+    // Join / duplicate / delete line
     { "keys": ["ctrl+j"], "command": "join_lines" },
-    
-    // Duplicate line
     { "keys": ["ctrl+shift+j"], "command": "duplicate_line" },
+    { "keys": ["ctrl+k"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Delete Line.sublime-macro" } },
 
-    // Delete line
-    { "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    // Move line up / down (4coder ctrl+shift+[ / ])
+    { "keys": ["ctrl+shift+["], "command": "swap_line_up" },
+    { "keys": ["ctrl+shift+]"], "command": "swap_line_down" },
 
-    // Next / previous error
+    // Next / previous jump (build results, LSP locations)
     { "keys": ["ctrl+w"], "command": "next_result" },
     { "keys": ["ctrl+e"], "command": "prev_result" },
 
-    // Select lines up / below
-    { "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
-    { "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
+    // Jump back after goto (4coder ctrl+`)
+    { "keys": ["ctrl+`"], "command": "jump_back" },
 
-    // Move current line up/down
-    { "keys": ["alt+up"],   "command": "swap_line_up" },
-    { "keys": ["alt+down"], "command": "swap_line_down" },
+    // Multi-caret: next match (4coder ctrl+5)
+    { "keys": ["ctrl+5"], "command": "find_under_expand" },
 
-    // Open terminal    
-    {"keys": ["ctrl+shift+h"], "command": "terminus_open", "args": {"cwd": "${folder}" } },
+    // Select surrounding scope (4coder ctrl+-)
+    { "keys": ["ctrl+-"], "command": "expand_selection", "args": { "to": "brackets" } },
+
+    // Multi-caret up / down (4coder ctrl+shift+arrows)
+    { "keys": ["ctrl+shift+up"], "command": "select_lines", "args": { "forward": false } },
+    { "keys": ["ctrl+shift+down"], "command": "select_lines", "args": { "forward": true } },
+
+    // Project file search (4coder ctrl+p — switch buffer; Sublime goto-anything in project)
+    { "keys": ["ctrl+p"], "command": "show_overlay", "args": { "overlay": "goto", "text": "" } },
+
+    // Search / replace (4coder keys, Sublime panels)
+    { "keys": ["ctrl+f"], "command": "show_panel", "args": { "panel": "find" } },
+    { "keys": ["ctrl+shift+f"], "command": "run_macro_file", "args": { "file": "res://Packages/User/find_in_selection.sublime-macro" } },
+    { "keys": ["ctrl+h"], "command": "show_panel", "args": { "panel": "replace" } },
+    { "keys": ["ctrl+shift+h"], "command": "run_macro_file", "args": { "file": "res://Packages/User/replace_in_selection.sublime-macro" } },
+    { "keys": ["ctrl+shift+y"], "command": "show_panel", "args": { "panel": "find_in_files" } },
+    { "keys": ["ctrl+g"], "command": "show_overlay", "args": { "overlay": "goto", "text": ":" } },
+
+    // Open terminal (moved off ctrl+shift+h for replace-in-range)
+    { "keys": ["ctrl+alt+t"], "command": "terminus_open", "args": { "cwd": "${folder}" } },
 
     // Goto start / end of line
-    { "keys": ["ctrl+n"], "command": "move_to", "args": {"to": "bol", "extend": false} },
-    { "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+    { "keys": ["ctrl+n"], "command": "move_to", "args": { "to": "bol", "extend": false } },
+    { "keys": ["ctrl+m"], "command": "move_to", "args": { "to": "eol", "extend": false } },
 
-    // Find and skip
-    { "keys": ["ctrl+8"], "command": "find_under_expand" },
-    { "keys": ["ctrl+shift+8"], "command": "find_under_expand_skip" },
-
-    // Goto definition
+    // Goto definition / peek (4coder ctrl+q / ctrl+shift+q)
     { "keys": ["ctrl+q"], "command": "goto_definition" },
+    {
+        "keys": ["ctrl+shift+q"],
+        "command": "lsp_symbol_definition",
+        "args": { "split_view": true },
+        "context": [{ "key": "lsp.session_with_capability", "operand": "definitionProvider" }]
+    },
 
-    // Next / previous find match (ctrl+f)
+    // Find next / previous match in buffer
     { "keys": ["ctrl+6"], "command": "find_next" },
     { "keys": ["ctrl+7"], "command": "find_prev" },
 
-    // Jump to start / end of highlighted scope
-    { "keys": ["ctrl+["], "command": "bh_key", "args": {"no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "left"} } } },
-    { "keys": ["ctrl+]"], "command": "bh_key", "args": {"no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "right"} } } },
-
-    // Select to the start/end of current bracket
-    { "keys": ["ctrl+shift+["], "command": "bh_key", "args": { "no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "left", "extend": true} } } },
-    { "keys": ["ctrl+shift+]"], "command": "bh_key", "args": {"no_outside_adj": null, "no_block_mode": null, "lines": true, "plugin": { "command": "bh_modules.bracketselect", "args": {"select": "right", "extend": true} } } },
-
     // Toggle comments
     { "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": false } },
-    { "keys": ["ctrl+shift+/"], "command": "toggle_commnt", "args": { "block": true } },
+    { "keys": ["ctrl+shift+/"], "command": "toggle_comment", "args": { "block": true } },
 
-    // New file / close tab
+    // New file / close tab (4coder ctrl+d; close unbound in 4coder — kept for Sublime)
     { "keys": ["ctrl+d"], "command": "new_file" },
     { "keys": ["ctrl+shift+d"], "command": "close" },
 
-    // Goto file / project
-    { "keys": ["ctrl+i"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+    // Goto symbol / project symbol
+    { "keys": ["ctrl+i"], "command": "show_overlay", "args": { "overlay": "goto", "text": "@" } },
     { "keys": ["ctrl+shift+i"], "command": "goto_symbol_in_project" },
 
-    // Open the build panel
-    { "keys": ["ctrl+;"], "command": "build" },
-    { "keys": ["ctrl+shift+;"], "command": "show_panel", "args": {"panel": "output.exec", "toggle": true } },
+    // Build (4coder ctrl+\)
+    { "keys": ["ctrl+\\"], "command": "build" },
+    { "keys": ["ctrl+shift+\\"], "command": "show_panel", "args": { "panel": "output.exec", "toggle": true } },
 
-    // LSP (clangd)
-    { "keys": ["ctrl+="], "command": "lsp_hover", "context": [{"key": "lsp.session_with_capability", "operand": "hoverProvider"}] },
-    { "keys": ["Ctrl+shift+="], "command": "lsp_symbol_rename", "context": [{"key": "lsp.session_with_capability", "operand": "renameProvider"}] },
+    // Copy / cut line when selection empty (4coder ctrl+c / ctrl+x)
+    {
+        "keys": ["ctrl+c"],
+        "command": "run_macro_file",
+        "args": { "file": "res://Packages/User/copy_line.sublime-macro" },
+        "context": [{ "key": "selection_empty", "operand": true }]
+    },
+    {
+        "keys": ["ctrl+x"],
+        "command": "run_macro_file",
+        "args": { "file": "res://Packages/User/cut_line.sublime-macro" },
+        "context": [{ "key": "selection_empty", "operand": true }]
+    },
 
-    // Find references for whatever's under cursor
-    { "keys": ["ctrl+u"], "command": "lsp_symbol_references" },
+    // LSP rename (4coder ctrl+r)
+    {
+        "keys": ["ctrl+r"],
+        "command": "lsp_symbol_rename",
+        "context": [{ "key": "lsp.session_with_capability", "operand": "renameProvider" }]
+    },
+
+    // Find references
+    { "keys": ["ctrl+u"], "command": "lsp_symbol_references" }
 ]

@@ -1,0 +1,4 @@
+[
+    { "command": "toggle_find_in_selection", "args": { "on": true } },
+    { "command": "show_panel", "args": { "panel": "find" } }
+]

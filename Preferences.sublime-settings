@@ -40,7 +40,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 9,
+	"font_size": 12,
 	"gutter": true,
 	"hardware_acceleration": "opengl",
 	"highlight_line": true,
