@@ -40,13 +40,14 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 12,
+	"font_size": 9,
 	"gutter": true,
 	"hardware_acceleration": "opengl",
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Clang Format",
 		"Git Formats",
 		"SublimeLinter-clang",
 		"Vintage",
@@ -58,7 +59,9 @@
 	"index_workers": 8,
 	"line_numbers": true,
 	"margin": 0,
-	"match_brackets": false,
+	"match_brackets": true,
+	"match_brackets_content": false,
+	"match_brackets_angle": false,
 	"match_tags": false,
 	"overlay_scroll_bars": "enabled",
 	"remember_open_files": false,
