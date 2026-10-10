@@ -81,5 +81,5 @@
 	"translate_tabs_to_spaces": true,
 	"update_check": false,
     "status_bar_visible": false,
-    "fourcoder_modal_default_mode": "insert",
+    "fourcoder_modal_default_mode": "navigate",
 }

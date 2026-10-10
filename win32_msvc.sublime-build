@@ -1,6 +1,6 @@
 {
-    "shell_cmd": "$project_path/build.bat",
-    "working_dir": "$project_path",
+    "shell_cmd": "build.bat",
+    "working_dir": "${project_path:${folder}}",
     "shell": true,
-    "file_regex": "^((?:\\w\\:)?[^\\:\\n]+)\\((\\d+)\\)\\: (?:error|warning) \\w\\d+: ()([^\\n]+)$",
+    "file_regex": "^((?:\\w\\:)?[^\\:\\n]+)\\((\\d+)\\)\\: (?:error|warning) \\w\\d+: ()([^\\n]+)$"
 }

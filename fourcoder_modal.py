@@ -105,7 +105,10 @@ BINDINGS = {
     ),
     ("[", True): ("swap_line_up", {}),
     ("]", True): ("swap_line_down", {}),
-    ("\\", False): ("build", {}),
+    ("\\", False): (
+        "build",
+        {"build_system": "Packages/User/win32_msvc.sublime-build"},
+    ),
     ("\\", True): ("show_panel", {"panel": "output.exec", "toggle": True}),
     ("`", False): ("jump_back", {}),
     ("d", True): ("close", {}),
@@ -138,7 +141,7 @@ TEXT_KEYS = (
 
 def default_mode():
     return sublime.load_settings("Preferences.sublime-settings").get(
-        "fourcoder_modal_default_mode", MODE_INSERT
+        "fourcoder_modal_default_mode", MODE_NAVIGATE
     )
 
 
@@ -206,7 +209,14 @@ class FourcoderModalListener(sublime_plugin.EventListener):
             ensure_mode(view)
 
     def on_activated(self, view):
+        # Overlay/panel closed or tab focused again — restore navigate caret.
         ensure_mode(view)
+
+    def on_deactivated(self, view):
+        # Goto Anything / panels inherit block_caret from the view; clear it so
+        # search fields always get a normal thin caret and insert typing.
+        if view.settings().get(NAVIGATE_FLAG):
+            view.settings().set("block_caret", False)
 
     def on_new(self, view):
         # Inherit mode from the window's other views when possible.
@@ -275,12 +285,15 @@ class FourcoderModalDispatchCommand(sublime_plugin.TextCommand):
 
 
 def _navigate_context():
+    # Never steal keys from Goto Anything, the find/replace bar, etc.
     return [
         {
             "key": "setting.fourcoder_navigate",
             "operator": "equal",
             "operand": True,
-        }
+        },
+        {"key": "overlay_visible", "operator": "equal", "operand": False},
+        {"key": "panel_has_focus", "operator": "equal", "operand": False},
     ]
 
 
@@ -308,6 +321,6 @@ def _build_navigate_keymap():
 
 def plugin_loaded():
     sublime.log_message("Fourcoder modal: plugin loaded")
+    mode = default_mode()
     for window in sublime.windows():
-        for view in window.views():
-            ensure_mode(view)
+        set_window_mode(window, mode)

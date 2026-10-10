@@ -95,9 +95,14 @@
     { "keys": ["ctrl+i"], "command": "show_overlay", "args": { "overlay": "goto", "text": "@" } },
     { "keys": ["ctrl+shift+i"], "command": "goto_symbol_in_project" },
 
-    // Build (4coder ctrl+\)
-    { "keys": ["ctrl+\\"], "command": "build" },
+    // Build: run build.bat in project/folder root (4coder ctrl+\; navigate: \)
+    {
+        "keys": ["ctrl+\\"],
+        "command": "build",
+        "args": { "build_system": "Packages/User/win32_msvc.sublime-build" }
+    },
     { "keys": ["ctrl+shift+\\"], "command": "show_panel", "args": { "panel": "output.exec", "toggle": true } },
+
 
     // Copy / cut line when selection empty (4coder ctrl+c / ctrl+x)
     {
@@ -137,6 +142,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -154,6 +169,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -171,6 +196,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -188,6 +223,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -205,6 +250,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -222,6 +277,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -239,6 +304,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -256,6 +331,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -273,6 +358,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -290,6 +385,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -307,6 +412,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -324,6 +439,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -341,6 +466,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -358,6 +493,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -375,6 +520,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -392,6 +547,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -409,6 +574,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -426,6 +601,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -443,6 +628,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -460,6 +655,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -477,6 +682,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -494,6 +709,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -511,6 +736,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -528,6 +763,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -545,6 +790,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -562,6 +817,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -579,6 +844,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -596,6 +871,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -613,6 +898,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -630,6 +925,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -647,6 +952,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -664,6 +979,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -681,6 +1006,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -698,6 +1033,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -715,6 +1060,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -732,6 +1087,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -749,6 +1114,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -766,6 +1141,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -783,6 +1168,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -800,6 +1195,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -817,6 +1222,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -834,6 +1249,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -851,6 +1276,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -868,6 +1303,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -885,6 +1330,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -902,6 +1357,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -919,6 +1384,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -936,6 +1411,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -953,6 +1438,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -970,6 +1465,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -987,6 +1492,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1004,6 +1519,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1021,6 +1546,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1038,6 +1573,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1055,6 +1600,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1072,6 +1627,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1089,6 +1654,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1106,6 +1681,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1123,6 +1708,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1140,6 +1735,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1157,6 +1762,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1174,6 +1789,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1191,6 +1816,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1208,6 +1843,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1225,6 +1870,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1242,6 +1897,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1259,6 +1924,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1276,6 +1951,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1293,6 +1978,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1310,6 +2005,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1327,6 +2032,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1344,6 +2059,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1361,6 +2086,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1378,6 +2113,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1395,6 +2140,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1412,6 +2167,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1429,6 +2194,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1446,6 +2221,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1463,6 +2248,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1480,6 +2275,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1497,6 +2302,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1514,6 +2329,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1531,6 +2356,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1548,6 +2383,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1565,6 +2410,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1582,6 +2437,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1599,6 +2464,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1616,6 +2491,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1633,6 +2518,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1650,6 +2545,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1667,6 +2572,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1684,6 +2599,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1701,6 +2626,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1718,6 +2653,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1735,6 +2680,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         },
@@ -1752,6 +2707,16 @@
                     "key": "setting.fourcoder_navigate",
                     "operator": "equal",
                     "operand": true
+                },
+                {
+                    "key": "overlay_visible",
+                    "operator": "equal",
+                    "operand": false
+                },
+                {
+                    "key": "panel_has_focus",
+                    "operator": "equal",
+                    "operand": false
                 }
             ]
         }
