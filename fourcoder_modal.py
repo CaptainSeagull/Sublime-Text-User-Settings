@@ -37,6 +37,7 @@ WINDOW_COMMANDS = {
 # Bare key (+ optional shift) -> (command, args). Mirrors Default.sublime-keymap ctrl chords.
 BINDINGS = {
     ("space", False): ("set_mark", {}),
+    ("space", True): ("select_to_mark", {}),
     ("=", False): ("set_mark", {"swap": True}),
     ("a", False): ("select_all", {}),
     ("c", False): ("_fourcoder_copy", {}),

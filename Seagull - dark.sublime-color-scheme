@@ -47,16 +47,17 @@
         // ---- base theme (theme-claude-blue) ---------------------------
         // Comment body + // /* */ markers (markers are also punctuation.* and must win).
         { "name": "Comment", "scope": "comment, punctuation.definition.comment", "foreground": "var(comment)", "font_style": "" },
-        { "name": "String",  "scope": "string",  "foreground": "var(string)" },
+        // String body + " ' quotes (quotes are also punctuation.* and must win).
+        { "name": "String", "scope": "string, punctuation.definition.string", "foreground": "var(string)" },
         { "name": "Keyword", "scope": "keyword, storage.type, storage.modifier", "foreground": "var(fg)" },
         { "name": "Constant", "scope": "constant.numeric, constant.language, constant.character, constant.other", "foreground": "var(fg)" },
         { "name": "Preprocessor", "scope": "meta.preprocessor, keyword.control.import", "foreground": "var(fg)" },
-        { "name": "Include path", "scope": "string.quoted.other.lt-gt.include", "foreground": "var(string)" },
+        { "name": "Include path", "scope": "string.quoted.other.lt-gt.include, punctuation.definition.string.begin.include, punctuation.definition.string.end.include", "foreground": "var(string)" },
         { "name": "Functions", "scope": "entity.name.function, variable.function, support.function", "foreground": "var(fg)" },
-        // Off-yellow; exclude comment so // isn't stolen by this rule.
+        // Off-yellow; exclude comment/string so // and " aren't stolen by this rule.
         {
             "name": "Brackets and punctuation",
-            "scope": "punctuation - comment, punctuation.section - comment, meta.brace, meta.brackets, meta.parens, meta.block",
+            "scope": "punctuation - comment - string, punctuation.section - comment - string, meta.brace, meta.brackets, meta.parens, meta.block",
             "foreground": "var(fg)"
         },
 
