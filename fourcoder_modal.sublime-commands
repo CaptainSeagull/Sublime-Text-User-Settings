@@ -1,0 +1,14 @@
+[
+    {
+        "caption": "Fourcoder Modal: Toggle Insert / Navigate",
+        "command": "fourcoder_modal_toggle"
+    },
+    {
+        "caption": "Fourcoder Modal: Insert Mode",
+        "command": "fourcoder_modal_insert"
+    },
+    {
+        "caption": "Fourcoder Modal: Navigate Mode",
+        "command": "fourcoder_modal_navigate"
+    }
+]

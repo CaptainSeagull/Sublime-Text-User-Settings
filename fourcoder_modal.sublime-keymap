@@ -1,0 +1,1640 @@
+[
+    {
+        "keys": [
+            "f5"
+        ],
+        "command": "fourcoder_modal_toggle"
+    },
+    {
+        "keys": [
+            "a"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "a",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+a"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "a",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "b"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "b",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+b"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "b",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "c"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "c",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+c"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "c",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "d"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "d",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+d"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "d",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "e"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "e",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+e"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "e",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "f"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "f",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+f"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "f",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "g"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "g",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+g"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "g",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "h"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "h",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+h"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "h",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "i"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "i",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+i"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "i",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "j"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "j",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+j"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "j",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "k"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "k",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+k"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "k",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "l"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "l",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+l"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "l",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "m"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "m",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+m"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "m",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "n"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "n",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+n"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "n",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "o"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "o",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+o"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "o",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "p"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "p",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+p"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "p",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "q"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "q",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+q"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "q",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "r"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "r",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+r"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "r",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "s"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "s",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+s"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "s",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "t"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "t",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+t"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "t",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "u"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "u",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+u"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "u",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "v"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "v",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+v"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "v",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "w"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "w",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+w"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "w",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "x"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "x",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+x"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "x",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "y"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "y",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+y"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "y",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "z"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "z",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+z"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "z",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "0"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "0",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+0"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "0",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "1"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "1",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+1"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "1",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "2"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "2",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+2"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "2",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "3"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "3",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+3"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "3",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "4"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "4",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+4"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "4",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "5"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "5",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+5"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "5",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "6"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "6",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+6"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "6",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "7"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "7",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+7"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "7",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "8"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "8",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+8"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "8",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "9"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "9",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+9"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "9",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "space"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "space",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+space"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "space",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "-"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "-",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+-"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "-",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "="
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "=",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+="
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "=",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "["
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "[",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+["
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "[",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "]"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "]",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+]"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "]",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "\\"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "\\",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+\\"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "\\",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "/"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "/",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+/"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "/",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "`"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "`",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+`"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "`",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            ";"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": ";",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+;"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": ";",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "'"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "'",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+'"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": "'",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            ","
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": ",",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+,"
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": ",",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "."
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": ".",
+            "shift": false
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+."
+        ],
+        "command": "fourcoder_modal_dispatch",
+        "args": {
+            "key": ".",
+            "shift": true
+        },
+        "context": [
+            {
+                "key": "setting.fourcoder_navigate",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    }
+]
